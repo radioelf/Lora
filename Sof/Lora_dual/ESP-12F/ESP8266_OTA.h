@@ -30,7 +30,7 @@ Configuración OTA
 bool InitOTA() {
   // ArduinoOTA.setPort(8266);                                            // Puerto por defecto 8266
   ArduinoOTA.setHostname("Lora_E220");                                    // Nombre para el módulo ESP8266 al descubrirlo por el Ide de Arduino
-  ArduinoOTA.setPassword("xxxxxxxx");                                     // MD5 =381b6f72862e9a45a307b7f56c44ec32
+  ArduinoOTA.setPassword("xxxxxxxx");                                     // 
 
   ArduinoOTA.onStart([]() {
   });
