@@ -1,0 +1,29 @@
+# sensores para modulo lora-serial
+- platform: template
+  sensors:
+    sensor_adc_lora1:
+      friendly_name: 'Entrada ADC 1'
+      unique_id: 'entrada_adc1'
+      value_template: "{{ states('sensor.adc_lora1') }}"
+    sensor_adc_lora2:
+      friendly_name: 'Entrada ADC 2'
+      unique_id: 'entrada_adc2'
+      value_template: "{{ states('sensor.adc_lora2') }}"
+    sensor_adc_lora3:
+      friendly_name: 'Entrada ADC 3'
+      unique_id: 'entrada_adc3'
+      value_template: "{{ states('sensor.adc_lora3') }}"
+    sensor_adc_lora4:
+      friendly_name: 'Entrada ADC 4'
+      unique_id: 'entrada_adc4'
+      value_template: "{{ states('sensor.adc_lora4') }}"
+    sensor_power_lora:
+      friendly_name: 'Tension de alimentacion'
+      unit_of_measurement: "V"
+      unique_id: 'tension_alimentacion'
+      value_template: "{{ states('sensor.power_lora') }}"
+    sensor_rssi_lora:
+      friendly_name: 'Nivel RF'
+      unit_of_measurement: "dBm"
+      unique_id: 'nivel_rssi'
+      value_template: "{{ states('sensor.rssi_lora') }}"
