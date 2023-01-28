@@ -60,11 +60,13 @@ class SerialApp(hass.Hass):
             if self.cycle >= 3:
                 self.cycle = 0
                 self.ser.write(b"Update:")
+                self.status = False
                 self.log("Forzamos actualizacion")
         else:
             if self.cycle >= 30:
                 self.cycle = 0
                 self.ser.write(b"Update:")
+                self.status = False
                 self.log("Actualizacion periodica")
                 
 
