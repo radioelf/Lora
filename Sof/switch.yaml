@@ -1,0 +1,59 @@
+# reles 1 al 4 modulo lora
+- platform: template
+  switches:
+    rele_lora1:
+      unique_id: "rele lora 1"
+      friendly_name: "Control rele1 lora"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.rele_lora1
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.rele_lora1
+    rele_lora2:
+      unique_id: "rele lora 2"
+      friendly_name: "Control rele2 lora"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.rele_lora2
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.rele_lora2
+    rele_lora3:
+      unique_id: "rele lora 3"
+      friendly_name: "Control rele3 lora"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.rele_lora3
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.rele_lora3
+    rele_lora4:
+      unique_id: "rele lora 4"
+      friendly_name: "Control rele4 lora"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.rele_lora4
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.rele_lora4
+# interruptor actualizar
+    update_lora:
+      unique_id: "actualiza lora"
+      friendly_name: "Actualiza estados lora"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.update_lora
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.update_lora
